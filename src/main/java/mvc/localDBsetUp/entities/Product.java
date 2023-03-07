@@ -42,12 +42,8 @@ public class Product {
 	@Column(name="quantity_per_unit")
 	private String quentityPerUnit;
 	
-	
-//	@NotNull
-//	@NotEmpty
-//	@ManyToOne()
-//	@JoinColumn(name="category_id")
-//	private Category category;
-//	
+	@ManyToOne()
+	@JoinColumn(name="category_id")
+	private Category category;
 	
 }
