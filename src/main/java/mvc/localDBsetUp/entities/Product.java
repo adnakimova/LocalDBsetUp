@@ -1,62 +1,53 @@
 package mvc.localDBsetUp.entities;
-import javax.persistence.*;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+
+import lombok.Data;
 
 
-@Table(name = "products")
 @Entity
+@Table(name="products")
+@Data
 public class Product {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long productId;
+	@Column(name="product_id")
+	private int id;
+	
+//	@Column(name="category_id")
+//	private int categoryId;
+	
+	@Column(name="product_name")
 	private String productName;
-	private long categoryId;
+	
+	
+	@Column(name="unit_price")
 	private double unitPrice;
-	private String description;
-	
-	public Product() {}
-	
-	public Product(long productId, String productName, long categoryId, double unitPrice, String description) {
-		super();
-		this.productId = productId;
-		this.productName = productName;
-		this.categoryId = categoryId;
-		this.unitPrice = unitPrice;
-		this.description = description;
-	}
-	public long getProductId() {
-		return productId;
-	}
-	public void setProductId(long productId) {
-		this.productId = productId;
-	}
-	public String getProductName() {
-		return productName;
-	}
-	public void setProductName(String productName) {
-		this.productName = productName;
-	}
-	public long getCategoryId() {
-		return categoryId;
-	}
-	public void setCategoryId(long categoryId) {
-		this.categoryId = categoryId;
-	}
-	public double getUnitPrice() {
-		return unitPrice;
-	}
-	public void setUnitPrice(double unitPrice) {
-		this.unitPrice = unitPrice;
-	}
-	public String getDescription() {
-		return description;
-	}
-	public void setDescription(String description) {
-		this.description = description;
-	}
 	
 	
+	@Column(name="units_in_stock")
+	private short unitsInStock;
 	
 	
-
+	@Column(name="quantity_per_unit")
+	private String quentityPerUnit;
+	
+	
+//	@NotNull
+//	@NotEmpty
+//	@ManyToOne()
+//	@JoinColumn(name="category_id")
+//	private Category category;
+//	
+	
 }

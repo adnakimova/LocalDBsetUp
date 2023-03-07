@@ -1,9 +1,14 @@
 package mvc.localDBsetUp.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 import mvc.localDBsetUp.entities.Product;
 
-public interface ProductRepository extends JpaRepository<Product, Long>{
+@Repository
+public interface ProductRepository extends JpaRepository<Product, Integer>{
+	
+	
 
+	
 }
