@@ -40,6 +40,18 @@
 				"url": "http://localhost:8080/api/products/add"
 			},
 			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "5ec2a950-bca7-40d0-8d66-ad6c27a0b8d8",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	]
 }
