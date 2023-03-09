@@ -53,6 +53,18 @@
 				"url": "http://localhost:8080/api/products/11"
 			},
 			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "ebca361a-e0a0-4bd0-b7ea-7c05d8222d58",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	]
 }
