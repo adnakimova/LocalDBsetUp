@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "d779883d-547b-42b2-a195-9f68574069fa",
+		"name": "nothing",
+		"description": "# Introduction\nWhat does your API do?\n\n# Overview\nThings that the developers should know about\n\n# Authentication\nWhat is the preferred way of using the API?\n\n# Error Codes\nWhat errors and status codes can a user expect?\n\n# Rate limit\nIs there a limit to the number of requests an user can send?",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAll",
+			"id": "f47b1d0c-a807-4f5b-b324-a506cee784a3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/products/getAll"
+			},
+			"response": [
+				{
+					"id": "436cf548-d806-4f57-8a48-3d5b1fa37253",
+					"name": "getAll",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/products/getAll"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 09 Mar 2023 06:06:28 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "[\n    {\n        \"id\": 11,\n        \"productName\": \"Chips\",\n        \"unitPrice\": 12,\n        \"unitsInStock\": 2,\n        \"quentityPerUnit\": \"3\",\n        \"category\": null\n    },\n    {\n        \"id\": 27,\n        \"productName\": \"Chupa Chups\",\n        \"unitPrice\": 34,\n        \"unitsInStock\": 22,\n        \"quentityPerUnit\": \"32\",\n        \"category\": null\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "add",
+			"id": "50bafd3c-465f-4095-8c20-b3a214863376",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productName\":\"Meat\",\r\n    \"unitPrice\": 26.0,\r\n    \"unitsInStock\": 45,\r\n    \"quentityPerUnit\":\"23\"\r\n\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/products/add"
+			},
+			"response": []
+		},
+		{
+			"name": "getProduct",
+			"id": "5ec2a950-bca7-40d0-8d66-ad6c27a0b8d8",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/products/11"
+			},
+			"response": [
+				{
+					"id": "1d28d50e-d582-496d-a84b-7551ed1dc00f",
+					"name": "getProduct",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/products/11"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 09 Mar 2023 06:16:41 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"id\": 11,\n    \"productName\": \"Chips\",\n    \"unitPrice\": 12,\n    \"unitsInStock\": 2,\n    \"quentityPerUnit\": \"3\",\n    \"category\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "delete",
+			"id": "ebca361a-e0a0-4bd0-b7ea-7c05d8222d58",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/api/products/11"
+			},
+			"response": []
+		}
+	]
+}
