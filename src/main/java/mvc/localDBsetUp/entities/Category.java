@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
@@ -17,7 +18,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Category {
+public class Category implements BaseEntity{
 	@Id
 	@Column(name="category_id")
 	private int categoryId;
@@ -25,7 +26,7 @@ public class Category {
 	@Column(name="category_name")
 	private String categoryName;
 	
-	@OneToMany(mappedBy="category")
+	@OneToMany(mappedBy="category",fetch = FetchType.LAZY)
 	private List<Product> products;
 
 }
