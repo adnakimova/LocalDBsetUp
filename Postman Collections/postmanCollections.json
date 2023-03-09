@@ -17,7 +17,45 @@
 				"header": [],
 				"url": "http://localhost:8080/api/products/getAll"
 			},
-			"response": []
+			"response": [
+				{
+					"id": "436cf548-d806-4f57-8a48-3d5b1fa37253",
+					"name": "getAll",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/products/getAll"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 09 Mar 2023 06:06:28 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "[\n    {\n        \"id\": 11,\n        \"productName\": \"Chips\",\n        \"unitPrice\": 12,\n        \"unitsInStock\": 2,\n        \"quentityPerUnit\": \"3\",\n        \"category\": null\n    },\n    {\n        \"id\": 27,\n        \"productName\": \"Chupa Chups\",\n        \"unitPrice\": 34,\n        \"unitsInStock\": 22,\n        \"quentityPerUnit\": \"32\",\n        \"category\": null\n    }\n]"
+				}
+			]
 		},
 		{
 			"name": "add",
