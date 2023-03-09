@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "New Request",
+			"name": "getAll",
 			"id": "f47b1d0c-a807-4f5b-b324-a506cee784a3",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -16,6 +16,18 @@
 				"method": "GET",
 				"header": [],
 				"url": "http://localhost:8080/api/products/getAll"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "50bafd3c-465f-4095-8c20-b3a214863376",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
 			},
 			"response": []
 		}
