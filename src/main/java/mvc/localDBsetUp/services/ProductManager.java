@@ -40,6 +40,13 @@ public class ProductManager implements ProductService{
 		
 	}
 
+	@Override
+	public void update(Product product) {
+		 this.productRepository.save(product);
+		 
+		
+	}
+
 	
 
 }
