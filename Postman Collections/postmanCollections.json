@@ -55,7 +55,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "delete",
 			"id": "ebca361a-e0a0-4bd0-b7ea-7c05d8222d58",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
