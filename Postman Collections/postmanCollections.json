@@ -52,7 +52,45 @@
 				"header": [],
 				"url": "http://localhost:8080/api/products/11"
 			},
-			"response": []
+			"response": [
+				{
+					"id": "1d28d50e-d582-496d-a84b-7551ed1dc00f",
+					"name": "getProduct",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/products/11"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 09 Mar 2023 06:16:41 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"id\": 11,\n    \"productName\": \"Chips\",\n    \"unitPrice\": 12,\n    \"unitsInStock\": 2,\n    \"quentityPerUnit\": \"3\",\n    \"category\": null\n}"
+				}
+			]
 		},
 		{
 			"name": "delete",
