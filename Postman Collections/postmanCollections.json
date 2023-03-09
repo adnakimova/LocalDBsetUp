@@ -164,6 +164,18 @@
 				"url": "http://localhost:8080/api/products/update"
 			},
 			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "39778681-de84-48be-83f6-690152576abc",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	]
 }
