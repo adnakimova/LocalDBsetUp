@@ -42,7 +42,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "getProduct",
 			"id": "5ec2a950-bca7-40d0-8d66-ad6c27a0b8d8",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
