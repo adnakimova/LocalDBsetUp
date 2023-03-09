@@ -8,7 +8,7 @@
 	"item": [
 		{
 			"name": "http://localhost:8080/api/products/getAll",
-			"_postman_id": "84073d14-f693-486d-8126-7a06dd1bc143",
+			"id": "84073d14-f693-486d-8126-7a06dd1bc143",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -23,7 +23,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"categoryId\": 3,\r\n       \"categoryName\":\"Beverage \"\r\n\r\n}",
+					"raw": "",
 					"options": {
 						"raw": {
 							"language": "json"
