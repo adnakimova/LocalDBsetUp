@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "getAll",
+			"name": "New Request",
 			"id": "f47b1d0c-a807-4f5b-b324-a506cee784a3",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
