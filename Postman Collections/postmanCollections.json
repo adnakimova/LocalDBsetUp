@@ -142,6 +142,28 @@
 				"url": "http://localhost:8080/api/products/11"
 			},
 			"response": []
+		},
+		{
+			"name": "update",
+			"id": "9d6ee71a-6b25-409c-bac5-5a0125f678b5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productName\":\"Watermelon\",\r\n    \"unitPrice\": 26.0,\r\n    \"unitsInStock\": 45,\r\n    \"quentityPerUnit\":\"23\"\r\n\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/products/update"
+			},
+			"response": []
 		}
 	]
 }
