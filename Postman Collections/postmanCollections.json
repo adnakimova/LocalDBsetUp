@@ -26,8 +26,18 @@
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productName\":\"Meat\",\r\n    \"unitPrice\": 26.0,\r\n    \"unitsInStock\": 45,\r\n    \"quentityPerUnit\":\"23\"\r\n\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/products/add"
 			},
 			"response": []
 		}
