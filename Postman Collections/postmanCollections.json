@@ -150,11 +150,11 @@
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "PUT",
+				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"productName\":\"Meat\",\r\n    \"unitPrice\": 26.0,\r\n    \"unitsInStock\": 45,\r\n    \"quentityPerUnit\":\"23\"\r\n\r\n    }",
+					"raw": "{\r\n    \"productName\":\"Watermelon\",\r\n    \"unitPrice\": 26.0,\r\n    \"unitsInStock\": 45,\r\n    \"quentityPerUnit\":\"23\"\r\n\r\n    }",
 					"options": {
 						"raw": {
 							"language": "json"
